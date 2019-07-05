@@ -1,0 +1,25 @@
+/* reset */
+*{margin:0;padding:0;}
+/* 三角形 */
+.triangle-r,.triangle-l,.triangle-t,.triangle-b{display:inline-block;width:0px;height:0;line-height:0;font-size:0;}
+.triangle-r{border:6px solid transparent;border-left-color:#c2c2c2;border-style:dashed dashed dashed solid;}
+.triangle-l{border:6px solid transparent;border-right-color:#c2c2c2;border-style:dashed solid dashed dashed;}
+.triangle-t{border:6px solid transparent;border-bottom-color:#c2c2c2;border-style:dashed dashed solid dashed;}
+.triangle-b{border:6px solid transparent;border-top-color:#c2c2c2;border-style:solid dashed dashed dashed;}
+
+/* 多选 */
+.select-mult{position:relative;z-index:1;cursor:pointer;font-size:12px;background:#fff;height:28px;line-height:28px;border:1px solid #e6e6e6;}
+.select-mult-disabled{cursor:not-allowed;}
+.select-mult-title{padding:0 28px 0 10px;}
+.select-text{text-overflow: ellipsis; white-space: nowrap; overflow:hidden;color:#969696;}
+.select-mult .triangle-b{position:absolute;top:12px;right:10px;}
+.select-mult .option-selected{display:inline-block;padding:0 3px;height:20px;line-height:20px;background:#5FB878;color:#fff;}
+.select-mult .option-selected+.option-selected{margin-left:5px;}
+.select-mult .layui-form-checkbox[lay-skin=primary]{margin-top:0 !important;}
+
+/* 公共分类 */
+.select-mult-options{display:none;max-height:200px;overflow:auto;font-size:12px;zoom:1;position:absolute;top:28px;left:-1px;right:-1px;background:#fff;border:1px solid #e6e6e6;}
+.select-mult-options li{display:block;list-style-type:none; padding: 4px 10px;text-overflow: ellipsis; white-space: nowrap; overflow:hidden; color:#333;cursor: pointer;}
+.select-mult-options .layui-form-checkbox{display:block;}
+.select-mult-options li.active{ background-color:#e5f2ff;}
+.select-mult-options li:hover{background-color:#eff5fb;}
